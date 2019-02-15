@@ -6,7 +6,7 @@ _The sample snippets shown in this repo is being used with Postgresql database, 
 
 ### If I have a table name or column name that is different from the model name and property, what should I change?
 
-The table name maps to the model name. You can add the `settings` property in the `@model` decorator.
+The model name generally maps to the table name. You can make the model associate with a different table name by specifying it in the `@model` decorator `settings` property.
 
 ```
 @model({
@@ -19,7 +19,7 @@ The table name maps to the model name. You can add the `settings` property in th
 export class Todo extends Entity {
 ```
 
-Similarly for column name. It maps to the property field of the model class.
+Similarly for column name.
 
 ```
   @property({
